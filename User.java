@@ -22,4 +22,9 @@ public class User {
         return password.equals(input);
     }
 
+    @Override
+    public String toString(){
+        return username + (isAdmin ? "[Admin]":"  ");
+    }
+
 }
